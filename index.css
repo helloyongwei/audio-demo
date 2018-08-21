@@ -1,0 +1,169 @@
+* {margin: 0; padding: 0; box-sizing: border-box}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.audioWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 22px;
+    border: 1px solid #121416;
+    border-radius: 2px;
+    width: 402px;
+    /* height: 214px; */
+    background: linear-gradient(to bottom, #2B2E35, #373C43, #1B1D22);
+}
+
+
+/* up */
+
+.audioWrapper > .up {
+    display: flex;
+}
+
+.audioWrapper > .up > .imgWrapper {
+    border: 1px solid #020202;
+}
+
+.audioWrapper > .up > .imgWrapper > img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+/* up other */
+
+.up > .other {
+    margin-left: 20px;
+}
+
+.up > .other > .info {
+    margin-bottom: 24px;
+    color: #DCDEE0;
+}
+.up > .other > .info > span {
+    color: #8D9096;
+    font-size: 12px;
+}
+
+
+.up > .other > .controller {
+    display: flex;
+    justify-content: space-between;
+    color: #DCDEE0;
+    width: 222px;
+}
+
+.up > .other > .controller  div {
+    display: flex;
+} 
+
+.up > .other > .controller  div svg {
+    cursor: pointer;
+}
+
+.up > .other > .controller  div .play {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 4px;
+    background-color: linear-gradient(to bottom, #41464F, #25282D);
+    color: #95989E;
+    border: 1px solid #25282E;
+    box-shadow: 0 4px 2px #101215;
+}
+
+.up > .other > .controller  div .play svg {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+
+
+.up > .other > .controller  div .prev,
+.up > .other > .controller  div .next {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 4px;
+    background-color: #373C43;
+    color: #95989E;
+    border: 1px solid #25282E;
+    box-shadow: 0 3px 2px #101215;
+}
+
+.up > .other > .controller  div .prev svg,
+.up > .other > .controller  div .next svg{
+    position: absolute;
+    left: 30%;
+    top: 25%;
+}
+
+.up > .other > .controller > .left {
+    justify-content: center;
+    align-items: center;
+}
+.up > .other > .controller > .left svg.icon.icon-play{
+    display: inline-block;
+}
+.up > .other > .controller > .left svg.icon.icon-pause{
+    display: none;
+}
+
+
+
+.up > .other > .controller > .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.up > .other > .controller > .right svg.icon.icon-voice{
+    display: inline-block;
+}
+.up > .other > .controller > .right svg.icon.icon-mute{
+    display: none;
+}
+
+
+/* down */
+.down {
+    margin-top: 22px;
+}
+
+.down > .progressBar {
+    border-radius: 4px;
+    box-shadow: 0 2px #2C2F39;
+    
+}
+
+.progressBar > .progress {
+    width: 356px;
+    height: 12px;
+    background-color: #111316;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.progressBar > .progress > .fill {
+    height: 12px;
+    width: 30%;
+    border-radius: 2px;
+    background-color: #4BA4BD;
+}
+
+.progressBar > .progress > svg.icon {
+    color: #DDDEE2;
+    margin-left: -12px;
+}
+
+.down > p {
+    color: #DCDEE0;
+}

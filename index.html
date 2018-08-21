@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>audio demo</title>
+    <link rel="stylesheet" href="./index.css">
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="audioWrapper" class="audioWrapper">
+        <div class="up">
+            <div class="imgWrapper">
+                <img id="cover" src="./Aurora.jpg" alt="图片">
+            </div>
+            <div class="other">
+                <div class="info">
+                    <p id="songName"></p>
+                    <span id="singer"></span>
+                </div>
+                <div class="controller">
+                    <div class="left">
+                        <span id="play" class="play">
+                            <svg style="display: inline-block;" class="icon icon-play" aria-hidden="true">
+                                <use xlink:href="#icon-play"></use>
+                            </svg>
+                            <svg style="display: none;" class="icon icon-pause" aria-hidden="true">
+                                <use xlink:href="#icon-pause"></use>
+                            </svg>
+                        </span>
+                        <span id="prev" class="prev">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-prev"></use>
+                            </svg>
+                        </span>
+                        <span id="next" class="next">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-next"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="right">
+                        <span id="voice">
+                            <svg style="display: inline-block;" class="icon icon-voice" aria-hidden="true">
+                                <use xlink:href="#icon-voice"></use>
+                            </svg>
+                            <svg style="display: none;" class="icon icon-mute" aria-hidden="true">
+                                <use xlink:href="#icon-mute"></use>
+                            </svg>
+                        </span>
+                        <div class="voice-progress">声音</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="down">
+            <div class="progressBar">
+                <div id="progress" class="progress">
+                    <div id="fill" class="fill" style="width: 0%;">
+                        
+                    </div>
+                    <svg class="icon icon-circle" aria-hidden="true">
+                        <use xlink:href="#icon-circle"></use>
+                    </svg>
+                </div>
+                
+            </div>
+            <p>
+                <span id="currentTime" class="currentTime">00:00</span>/
+                <span id="audioTime" class="audioTime">00:00</span>
+            </p>
+        </div>
+        <audio data-state="paused" id="audio" 
+        src="./audios/Luminous - Lensko.mp3">浏览器不支持audio</audio>
+    </div>
+          
+    
+    <script src="//at.alicdn.com/t/font_800155_u15cpsdvuih.js"></script>
+    <script src="./vendors/jsmediatags.min.js"></script>
+    <script src="./js/time.js"></script>
+    <script src="./js/songData.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/voice.js"></script>
+</body>
+</html>
