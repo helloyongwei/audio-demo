@@ -37,7 +37,3 @@ function renderVoiceProgress(){
   let percent = audio.volume*100
   voiceFill.style.width = audio.muted === true ? '0%' : percent + '%'
 }
-
-
-
-
