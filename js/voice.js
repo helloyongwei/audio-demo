@@ -4,7 +4,7 @@ var audioVoice = document.getElementById('voice')
 audioVoice.addEventListener('click', (e)=>{
     let voice = audioVoice.getElementsByClassName('icon-voice')[0]
     let mute = audioVoice.getElementsByClassName('icon-mute')[0]
-    console.log(voice.style.display)
+    // console.log('audio.muted = ' + audio.muted)
     if (voice.style.display === 'inline-block') {
         voice.style.display = 'none'
         mute.style.display = 'inline-block'
@@ -16,4 +16,4 @@ audioVoice.addEventListener('click', (e)=>{
     }
 })
 
-console.log(audio.muted)
+// console.log('audio.muted = ' + audio.muted)
