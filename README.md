@@ -16,7 +16,7 @@ git clone git@github.com:helloyongwei/audio-demo.git
 
 例如: 我将hello.mp3文件放入audio-demo/audios目录中, 则audio像下面这样:
 ```
-<audio src="/audios/hello.mp3"></audio>
+<audio src="./audios/hello.mp3"></audio>
 ```
 
 第三步:
