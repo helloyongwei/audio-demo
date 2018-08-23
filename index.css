@@ -181,11 +181,21 @@ body {
     background-color: #4BA4BD;
 }
 
-.progressBar > .progress > svg.icon {
+.progressBar > .progress > .dragTime {
+  padding: 8px;
+  margin-left: -12px;
+  cursor: pointer;
+}
+
+.progressBar > .progress > .dragTime > svg.icon {
     color: #DDDEE2;
-    margin-left: -8px;
+    
 }
 
 .down > p {
     color: #DCDEE0;
+}
+.down > p .currentTime,
+.down > p .audioTime {
+  font-size: 12px;
 }

@@ -1,16 +1,22 @@
 let fill = document.getElementById('fill')
 let progress = document.getElementById('progress')
+let dragTime = fill.nextElementSibling
+var audio = document.getElementById('audio')
 
 setAudioTime()
 timer()
 progress.addEventListener('click', clickProgress)
 
+//拖动
+dragTime.addEventListener('drag', clickProgress)
+dragTime.addEventListener('dragend', clickProgress)
 
 
 function setAudioTime() {
   let audioTime = document.getElementById('audioTime')
   renderTime(audioTime, audio.duration)
 }
+
 
 function timer() {
   timerId = setInterval(() => {
@@ -44,3 +50,6 @@ function clickProgress(event) {
   audio.currentTime = percent * audio.duration
   timer()
 }
+
+
+

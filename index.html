@@ -62,9 +62,11 @@
             <div class="voice-progressBar">
               <div id="voice-progress" class="voice-progress">
                 <div id="voice-fill" class="voice-fill" style="width: 0%;"></div>
-                <svg class="icon icon-circle" aria-hidden="true">
-                  <use xlink:href="#icon-circle"></use>
-                </svg>
+                <div class="dragVoice" id="dragVoice">
+                  <svg class="icon icon-circle" aria-hidden="true">
+                    <use xlink:href="#icon-circle"></use>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
@@ -75,9 +77,11 @@
       <div class="progressBar">
         <div id="progress" class="progress">
           <div id="fill" class="fill" style="width: 0%;"></div>
-          <svg class="icon icon-circle" aria-hidden="true">
-            <use xlink:href="#icon-circle"></use>
-          </svg>
+          <div id="dragTime" class="dragTime">
+            <svg draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)" class="icon icon-circle" aria-hidden="true">  
+              <use xlink:href="#icon-circle"></use>
+            </svg>
+          </div>
         </div>
 
       </div>
