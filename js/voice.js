@@ -30,7 +30,7 @@ function setVoice(event) {
   let a = event.clientX
   let left = voiceProgress.offsetLeft
   let right = voiceProgress.offsetLeft + voiceProgress.offsetWidth
-
+  
   //滑动块不超出进度条
   a = a < left ? left : a
   a = a > right ? right : a
@@ -39,12 +39,12 @@ function setVoice(event) {
   let percent = width / voiceProgress.offsetWidth
   audio.volume = percent
 
-  drawVoiceProgress()
   if (audio.volume === 0) {
     setAudioMuted()
   } else {
     setAudioVoice()
   }
+  drawVoiceProgress()
 }
 
 //设置静音
