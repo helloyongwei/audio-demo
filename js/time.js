@@ -14,6 +14,10 @@ dragTime.addEventListener('dragend', clickProgress)
 
 function setAudioTime() {
   let audioTime = document.getElementById('audioTime')
+  function loadAudio(){
+    isNaN(audio.duration) ? requestAnimationFrame(loadAudio):console.info("该歌曲的总时间为："+audio.duration+"秒")
+  }
+  loadAudio()
   renderTime(audioTime, audio.duration)
 }
 
